@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@500;700&family=League+Spartan:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* default */
+:root {
+  /* colors */
+  /* primary color */
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+
+  /* neutral colors */
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Epilogue", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* main conatiner */
+.container {
+  background-image: url("../images/bg-pattern-top-desktop.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100%;
+}
+/* top section */
+.top-section {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 4rem;
+  height: 50%;
+}
+
+/* main heading */
+.main-heading {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.main-heading h1 {
+  color: var(--Very-Dark-Magenta);
+  font-size: 4rem;
+  padding-right: 6rem;
+  padding-bottom: 2rem;
+}
+
+.main-heading p {
+  color: #242323;
+  padding-right: 50%;
+  margin-bottom: 10%;
+}
+
+/* rating conatiner */
+.rating-container {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+/* rating card */
+.rating {
+  background-color: var(--Light-Grayish-Magenta);
+  width: 70%;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.rating-icons {
+  float: left;
+}
+
+.rating-text {
+  float: right;
+  padding-right: 2rem;
+}
+
+/* testimonials */
+.testimonials {
+  height: 100%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* testimmonial card */
+.card {
+  background-color: var(--Very-Dark-Magenta);
+  display: inline-block;
+  width: 30%;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+.card-top {
+  padding: 2rem;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.card-image {
+  float: left;
+  /* padding: 2rem; */
+}
+
+.card-image img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.card-title h2 {
+  color: var(--White);
+  font-size: 0.8rem;
+}
+.card-title p {
+  color: var(--Soft-Pink);
+}
+
+.card-body {
+  padding: 0 2rem 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-body p {
+  color: white;
+}
+
+/* Small devices (portrait tablets and large phones, 375px and up) */
+@media only screen and (min-width: 375px) {
+  /* main conatiner */
+  .container {
+    background-image: url("../images/bg-pattern-bottom-mobile.svg");
+  }
+
+
+/* main heading */
+.main-heading {
+  float: none;
+   width: 100%;
+   text-align: center;
+}
+
+.main-heading h1 {
+  font-size: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.main-heading p {
+  padding-right: 20% ;
+  padding-left: 20%;
+
+}
+
+/* rating conatiner */
+.rating-container {
+  float: none;
+   width: 100%;
+}
+
+
+.rating-icons {
+  float: none;
+  text-align: center;
+}
+
+.rating-text {
+  float: none;
+  text-align: center;
+}
+
+/* testimonials */
+.testimonials {
+
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* testimmonial card */
+.card {
+  background-color: var(--Very-Dark-Magenta);
+  display: inline-block;
+  width: 30%;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+.card-top {
+  padding: 2rem;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.card-image {
+  float: left;
+  /* padding: 2rem; */
+}
+
+.card-image img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.card-title h2 {
+  color: var(--White);
+  font-size: 0.8rem;
+}
+.card-title p {
+    color: var(--Soft-Pink);
+}
+
+.card-body {
+  padding: 0 2rem 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-body p {
+    color: white;
+}
+}
